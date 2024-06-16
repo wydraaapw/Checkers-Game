@@ -18,7 +18,7 @@ public class Main
         gui.addNewMoveFromGUIListener((GameLogicImpl)gameLogic);
         ((GameLogicImpl) gameLogic).addNewGUIAfterMoveListener(gameLogic.getBoardPanel().getBoardTable().getTableModel());
 
-        // konsola gry wyświetlająca komunikaty
+        // game notifications console
         ConsolePanel consolePanel = new ConsolePanel();
         ((GameLogicImpl) gameLogic).addConsoleListener(consolePanel);
         gui.add(consolePanel, BorderLayout.WEST);
